@@ -1,7 +1,7 @@
 # Animotion Examples
 
-This is a repo dedicated to how I use Animotion to make [educational YouTube videos](https://www.youtube.com/@JoyofCodeDev) if you want to learn how you can use Animotion.
+This is a learning repo for Animotion examples I use to make educational content for [YouTube](https://www.youtube.com/@JoyofCodeDev).
 
-You can try the examples in the browser thanks to [SvelteLab](https://www.sveltelab.dev/) but there's also instructions if you want to try it yourself.
+You can try the examples in the browser thanks to [SvelteLab](https://www.sveltelab.dev/) but there's also instructions for local development.
 
-Don't take any of these examples as how you should do something but more of an inspiration.
+Please don't take any of these examples as how you should do something but more of an inspiration to achieve your goals.
