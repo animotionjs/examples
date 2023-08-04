@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	.h-center {
+		top: 50%;
+		left: 50%;
+		translate: -50% -50%;
+	}
+
+	.pattern {
+		background: repeating-linear-gradient(
+			45deg,
+			hsl(226 19% 13%),
+			hsl(226 19% 13%) 10px,
+			hsl(226 19% 15%) 10px,
+			hsl(226 19% 15%) 60px
+		);
+	}
+}
