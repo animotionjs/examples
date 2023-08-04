@@ -1,8 +1,6 @@
 # Avoid Representing State With Booleans
 
-[Try the example](https://www.sveltelab.dev/5cm41zk8o2t1n7p) in SvelteLab.
-
-This a presentation from [Avoid Representing State With Booleans](https://www.youtube.com/watch?v=4Lom_lqSGoY).
+You can watch [Avoid Representing State With Booleans](https://www.youtube.com/watch?v=4Lom_lqSGoY) to see the final presentation.
 
 Inside `theme.css` I set a `max-height` for code blocks to get the scrolling effect.
 
@@ -12,6 +10,10 @@ Inside `theme.css` I set a `max-height` for code blocks to get the scrolling eff
 	/* ... */
 }
 ```
+
+## Try In The Browser
+
+You can [open the example in SvelteLab](https://www.sveltelab.dev/5cm41zk8o2t1n7p).
 
 ## Setup
 
