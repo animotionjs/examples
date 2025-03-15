@@ -1,0 +1,176 @@
+/* fonts */
+@import '@fontsource/atkinson-hyperlegible';
+@import '@fontsource/monaspace-neon';
+
+/* presentation */
+@import '@animotion/core/theme';
+
+/* tailwind */
+@import 'tailwindcss/theme';
+@import 'tailwindcss/utilities';
+
+/* flowbite */
+@plugin 'flowbite/plugin';
+@custom-variant dark (&:where(.dark, .dark *));
+@theme {
+	--color-primary-50: #fff5f2;
+	--color-primary-100: #fff1ee;
+	--color-primary-200: #ffe4de;
+	--color-primary-300: #ffd5cc;
+	--color-primary-400: #ffbcad;
+	--color-primary-500: #fe795d;
+	--color-primary-600: #ef562f;
+	--color-primary-700: #eb4f27;
+	--color-primary-800: #cc4522;
+	--color-primary-900: #a5371b;
+}
+@source '../../node_modules/flowbite-svelte/dist';
+
+/* bits animations */
+@keyframes accordion-down {
+	from {
+		height: 0;
+	}
+	to {
+		height: var(--bits-accordion-content-height);
+	}
+}
+@keyframes accordion-up {
+	from {
+		height: var(--bits-accordion-content-height);
+	}
+	to {
+		height: 0;
+	}
+}
+@theme {
+	--animate-accordion-down: accordion-down 0.2s ease-out;
+	--animate-accordion-up: accordion-up 0.2s ease-out;
+}
+
+@utility center {
+	@apply h-full place-content-center place-items-center;
+}
+
+@utility font-inherit {
+	font: inherit;
+}
+
+@utility scrollbar {
+	&::-webkit-scrollbar {
+		width: 8px;
+		height: 8px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: transparent;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: #444;
+		border-radius: 8px;
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+/* reset */
+*,
+*::before,
+*::after {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+/* defaults */
+:root {
+	/* --r-background-color: oklch(20% 0.01 272); */
+	--r-background-color: oklch(18% 1% 272);
+	--r-main-font: 'Atkinson Hyperlegible';
+	--r-main-font-size: 42px;
+	--r-main-color: oklch(98% 0.02 272);
+	--r-heading-font: 'Atkinson Hyperlegible';
+	--r-code-font: 'Monaspace Neon';
+	--r-link-color: oklch(90.54% 0.15 194);
+	--ease: linear(
+		0 0%,
+		0.0036 9.62%,
+		0.0185 16.66%,
+		0.0489 23.03%,
+		0.0962 28.86%,
+		0.1705 34.93%,
+		0.269 40.66%,
+		0.3867 45.89%,
+		0.5833 52.95%,
+		0.683 57.05%,
+		0.7829 62.14%,
+		0.8621 67.46%,
+		0.8991 70.68%,
+		0.9299 74.03%,
+		0.9545 77.52%,
+		0.9735 81.21%,
+		0.9865 85%,
+		0.9949 89.15%,
+		1 100%
+	);
+}
+
+/* reset */
+button,
+select {
+	border: none;
+	background-color: transparent;
+	font: inherit;
+}
+
+/* body::before {
+	--size: 45px;
+	--line: color-mix(in lch, white, transparent 80%);
+	content: '';
+	height: 100vh;
+	width: 100vw;
+	position: fixed;
+	background:
+		linear-gradient(90deg, var(--line) 1px, transparent 1px var(--size)) 50% 50% / var(--size)
+			var(--size),
+		linear-gradient(var(--line) 1px, transparent 1px var(--size)) 50% 50% / var(--size) var(--size);
+	mask: linear-gradient(-20deg, transparent 20%, white);
+	top: 0;
+	transform-style: flat;
+	pointer-events: none;
+	z-index: -1;
+} */
+
+/* code block */
+/* div:has(> pre) {
+	padding: --spacing(4) --spacing(8);
+	background-color: oklch(24% 0.02 272);
+	border-top: 1px solid oklch(34% 0.02 272);
+	border-radius: var(--radius-lg);
+} */
+
+/* view transitions */
+html {
+	view-transition-name: none;
+}
+
+::view-transition-group(*) {
+	animation-duration: 0.6s;
+	animation-timing-function: var(--ease);
+}
+
+/* animations */
+.enter {
+	animation: enter 0.6s var(--ease);
+}
+
+@keyframes enter {
+	from {
+		/* scale: 0; */
+		translate: 0px 100svh;
+		filter: blur(10px);
+	}
+}

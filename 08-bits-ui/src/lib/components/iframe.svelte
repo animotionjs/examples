@@ -1,0 +1,12 @@
+<script lang="ts">
+	let { width = 1400, height = 800, src, ...props } = $props()
+</script>
+
+<iframe
+	class={['rounded-lg border border-neutral-800 shadow-md', props.class]}
+	title="iframe"
+	{width}
+	{height}
+	data-src={src}
+	frameborder="0"
+></iframe>
