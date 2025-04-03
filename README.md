@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository contains the slides I use to make educational content for the [YouTube](https://www.youtube.com/@JoyofCodeDev) videos.
+This repository contains the slides I use to make educational content for [YouTube](https://www.youtube.com/@JoyofCodeDev).
 
 Some projects use older Animotion versions, but you can still look at the utilities I use for the slides and use them in your own projects.
 
